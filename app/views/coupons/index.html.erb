@@ -1,0 +1,4 @@
+<h1>Index</h1>
+<% @coupons.each do |coupon| %>
+  <a href="<%= coupon_path(coupon)%>"><%=coupon.coupon_code%></a> <%= coupon.store %>
+<% end %>
